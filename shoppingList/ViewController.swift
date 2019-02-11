@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var newItemTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
     }
-
+    @IBAction func addNewItemButtonPressed(_ sender: UIBarButtonItem) {
+    
+    }
+    
 
 }
+// Notes on Shopping List:
 
+//Git hub was added and how to use tags
