@@ -26,7 +26,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         
     }
     @IBAction func addNewItemButtonPressed(_ sender: UIBarButtonItem) {
-        
+        if let newItemName = newItemTextField.text, newItemName != "" {
+            let newItem = Item(name: newItemName)
+            items.append(newItem)
+            tableView.reloadData()
+        }
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,10 +38,14 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") {
         let currentItemName = items[indexPath.row].name
         cell.textLabel?.text = currentItemName
         return cell
+            
+        } else {
+            return UITableViewCell()
+        }
     }
 }
 // Notes on Shopping List:
