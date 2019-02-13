@@ -18,9 +18,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
        tableView.dataSource = self
         
-        var item1 = Item(name: "milk")
-        var item2 = Item(name: "eggs")
+        let item1 = Item(name: "milk")
+        let item2 = Item(name: "eggs")
         items = [item1, item2]
+        let item3 = Item(name: "bread")
+        items.append(item3)
         
     }
     @IBAction func addNewItemButtonPressed(_ sender: UIBarButtonItem) {
@@ -34,7 +36,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
         let currentItemName = items[indexPath.row].name
-        cell.textLabel?.text = "Hello"
+        cell.textLabel?.text = currentItemName
         return cell
     }
 }
