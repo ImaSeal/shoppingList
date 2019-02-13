@@ -21,17 +21,19 @@ class ViewController: UIViewController, UITableViewDataSource {
         var item1 = Item(name: "milk")
         var item2 = Item(name: "eggs")
         items = [item1, item2]
+        
     }
     @IBAction func addNewItemButtonPressed(_ sender: UIBarButtonItem) {
         
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return items.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
+        let currentItemName = items[indexPath.row].name
         cell.textLabel?.text = "Hello"
         return cell
     }
