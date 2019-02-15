@@ -48,6 +48,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         } else {
             return UITableViewCell()
         }
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nvc = segue.destination as! secondViewController
+        if let indexpath = tableView.indexPathForSelectedRow {
+            let item = items[indexpath.row]
+            nvc.passedItem = item
+        }
     }
 }
 // Notes on Shopping List:

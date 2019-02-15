@@ -13,6 +13,7 @@
 		460E41C9220DF2EB009B0FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 460E41C8220DF2EB009B0FE7 /* Assets.xcassets */; };
 		460E41CC220DF2EB009B0FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460E41CA220DF2EB009B0FE7 /* LaunchScreen.storyboard */; };
 		468E1DDF2213392A0023E422 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E1DDE2213392A0023E422 /* Item.swift */; };
+		46D8E8BF2215DC730045E9FD /* secondViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D8E8BE2215DC730045E9FD /* secondViewConroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		460E41CB220DF2EB009B0FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		460E41CD220DF2EB009B0FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		468E1DDE2213392A0023E422 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		46D8E8BE2215DC730045E9FD /* secondViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewConroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				460E41C1220DF2EA009B0FE7 /* AppDelegate.swift */,
 				460E41C3220DF2EA009B0FE7 /* ViewController.swift */,
 				460E41C5220DF2EA009B0FE7 /* Main.storyboard */,
+				46D8E8BE2215DC730045E9FD /* secondViewConroller.swift */,
 				468E1DDE2213392A0023E422 /* Item.swift */,
 				460E41C8220DF2EB009B0FE7 /* Assets.xcassets */,
 				460E41CA220DF2EB009B0FE7 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D8E8BF2215DC730045E9FD /* secondViewConroller.swift in Sources */,
 				460E41C4220DF2EA009B0FE7 /* ViewController.swift in Sources */,
 				468E1DDF2213392A0023E422 /* Item.swift in Sources */,
 				460E41C2220DF2EA009B0FE7 /* AppDelegate.swift in Sources */,
